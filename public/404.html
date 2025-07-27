@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <script type="text/javascript">
-      // Recupera la ruta original que causó el 404
-      const redirectTo = '/portafolio-web2.0' + location.pathname + location.search + location.hash;
-      // Redirige a index.html pero manteniendo la ruta original en la URL
+      // Detectar el path base actual desde la ubicación real del sitio
+      const base = '/portafolio-web2.0';
+      const pathname = location.pathname.replace(base, '');
+      const redirectTo = base + pathname + location.search + location.hash;
+
       sessionStorage.redirect = redirectTo;
-      window.location.replace('/portafolio-web2.0/index.html');
+      window.location.replace(base + '/index.html');
     </script>
   </head>
   <body></body>
 </html>
+
