@@ -13,7 +13,7 @@ const sobreMi = () => {
         </div>
      </div>
      <footer>
-        <p>Copyright © 2025</p>
+        <p>Copyright © 2025. Alan Rodriguez Agostini. Todos los derechos reservados.</p>
      </footer>
     </>
       

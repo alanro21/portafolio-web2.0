@@ -11,7 +11,7 @@ const inicio = () => {
           <p> Descripcion de bienvenida a mi portafolio </p>
         </div>
         <footer>
-          <p>Copyright © 2025. Alan Rodriguez Agostini - Todos los derechos reservados.</p>
+          <p>Copyright © 2025. Alan Rodriguez Agostini. Todos los derechos reservados.</p>
         </footer>
       </div>
   );
