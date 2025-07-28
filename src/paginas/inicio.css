@@ -78,10 +78,10 @@ footer p{
 @media (max-width: 480px) {
     .titulo {
         max-width: 95%;
-        padding: 6px;
+        padding: 8px 16px;
     }
 
     .titulo h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
