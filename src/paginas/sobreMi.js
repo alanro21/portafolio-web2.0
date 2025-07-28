@@ -7,7 +7,7 @@ const sobreMi = () => {
         <div className='container-imag-1'></div>
         <div className='container-info'>
           <div className='info'><p>Descripcion de informacion</p></div>
-          <a href='/Currículum vítae (Rodriguez Agostini Alan Hernan).pdf' download className='boton-cv'>
+          <a href={`${process.env.PUBLIC_URL}/Currículum vítae (Rodriguez Agostini Alan Hernan).pdf`} download className='boton-cv'>
              <p>Descargar CV</p>
           </a>
         </div>
