@@ -27,10 +27,16 @@ body{
 .titulo{
     text-align: center;
     background-color: #0ae2f1f5;
-    margin-left: 320px;
-    margin-right: 320px;
-    margin-bottom: 10px;
+    margin: 10px auto;
     border-radius: 10px;
+    max-width: 90%;
+    width: fit-content;
+    text-align: center;
+    padding: 5px;
+}
+
+.titulo h1{
+    margin: 0;
 }
 
 
@@ -45,9 +51,37 @@ footer{
     background-color: rgba(95, 95, 95, 0.842);
     color: white;
     border-radius: 1px;
+    text-align: center;
 }
 
 footer p{
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 768px){
+
+      .titulo{
+        max-width: 100%;
+        padding: 8px 16px;
+      }
+
+      .titulo h1{
+        font-size: 26px;
+        text-align: center;
+      }
+
+
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        max-width: 95%;
+        padding: 6px;
+    }
+
+    .titulo h1 {
+        font-size: 20px;
+    }
 }
