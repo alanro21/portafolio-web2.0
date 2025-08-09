@@ -137,8 +137,8 @@ html, body, #root {
 @media (max-width: 480px) {
 
   .contenedor-2 {
-    padding: 20px 5px;
-    margin: 100px 90px 100px 90px;
+    padding: 20px 49px;
+    margin: 140px 90px 140px 90px;
   }
   .text {
     font-size: 12px;
@@ -166,9 +166,16 @@ html, body, #root {
     margin-bottom: 15px;
   }
 
+  .text {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0px;
+  }
+
+
   .text-2 {
-    margin-top: 25px;
-    font-size: 12px;
+    margin-top: 24px;
+    font-size: 14px;
     text-align: center;
   }
 
