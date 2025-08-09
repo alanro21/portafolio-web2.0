@@ -1,8 +1,17 @@
-body{
+html, body, #root{
+    height: 100%;
     margin: 0;
+    padding: 0;
+}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .contenedor{
+    flex: 1;
     opacity: 0;
     animation: defuminacion-conte 0.3s forwards;
 }
@@ -57,19 +66,19 @@ body{
 }
 
 footer{
-    margin-bottom: -20px;
-    margin-top: 80px;
-    background-color: rgb(29, 29, 29);
-    box-shadow: 20px 1px 35px rgb(0, 0, 0);
-    color: white;
-    border-radius: 1px;
-    text-align: center;
+  margin-top: auto; /* empuja footer al final */
+  background-color: rgb(29, 29, 29);
+  box-shadow: 20px 1px 35px rgb(0, 0, 0);
+  color: white;
+  border-radius: 1px;
+  text-align: center;
+  padding: 10px 0;
+
 }
 
-footer p{
-    font-size: 12px;
-    margin-top: 5px;
-    margin-bottom: 0px;
+footer p {
+  font-size: 12px;
+  margin: 5px 0 0 0;
 }
 
 @media (max-width: 768px){

@@ -4,7 +4,7 @@ import TypingEffect from '../componentes/TypingEffect';
 
 const inicio = () => {
   return (
-    <>
+    <div className='app-container'>
       <div className='contenedor'>
         <div className='container-imag'>
           <img src={`${process.env.PUBLIC_URL}/img/Foto-Principal.png`} alt='Foto-principal' className='imagen'></img>
@@ -22,7 +22,7 @@ const inicio = () => {
           <p>Copyright © 2025</p>
           <p>Alan Rodriguez Agostini - Todos los derechos reservados.</p>
       </footer>
-    </>
+    </div>
   );
 }
 
