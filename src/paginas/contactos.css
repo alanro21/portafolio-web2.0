@@ -1,42 +1,55 @@
-html, body, #root{
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.contenedor-principal{
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Este es tu contenedor principal animado, ahora flex:1 para que crezca */
+.contenedor-principal {
+  flex: 1;
   opacity: 0;
   animation: defumi-cont 0.3s forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-@keyframes defumi-cont{
-    to{
-        opacity: 1;
-    }
+@keyframes defumi-cont {
+  to {
+    opacity: 1;
+  }
 }
 
-.contenedor-2{
-    background-color: rgba(255, 255, 255, 0.911);
-    box-shadow: 5px 5px 5px 5px #494949a4;
-    padding: 20px 5px;
-    margin: 140px 250px 140px 250px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 5px;
+.contenedor-2 {
+  background-color: rgba(255, 255, 255, 0.911);
+  box-shadow: 5px 5px 5px 5px #494949a4;
+  padding: 30px 60px;
+  margin: 140px 250px 140px 250px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 5px;
 }
 
-.text{
-    font-size: 25px;
-    font-weight: 500;
-    margin-top: 0px;
+/* Resto de tus estilos sin cambios */
+.text {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 0px;
 }
 
-.logos{
-   display: flex;
-   align-items: center;
+.logos {
+  display: flex;
+  align-items: center;
 }
 
 .logo-con-texto {
@@ -46,35 +59,35 @@ html, body, #root{
   font-weight: 500;
 }
 
-.logo-con-texto a{
+.logo-con-texto a {
   text-decoration: none;
 }
 
-.logo1{
-   box-shadow: 5px 5px 15px #07bb61e5;
-   width: 175px;
-   height: 55px; 
-   margin-right: 50px;
-   border-radius: 10px;
-   transition: transform 0.3s ease;
-   cursor: pointer;
+.logo1 {
+  box-shadow: 5px 5px 15px #07bb61e5;
+  width: 175px;
+  height: 55px;
+  margin-right: 50px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-.logo1:hover{
+.logo1:hover {
   transform: translateY(2px) scale(1.05);
 }
 
-.logo2{
-   box-shadow: 5px 5px 15px #0791bbe5;
-   width: 175px;
-   height: 55px; 
-   margin-right: 0px;
-   border-radius: 10px;
-   transition: transform 0.3s ease;
-   cursor: pointer;
+.logo2 {
+  box-shadow: 5px 5px 15px #0791bbe5;
+  width: 175px;
+  height: 55px;
+  margin-right: 0px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-.logo2:hover{
+.logo2:hover {
   transform: translateY(2px) scale(1.05);
 }
 
@@ -92,12 +105,88 @@ html, body, #root{
   text-align: center;
 }
 
-.text-2{
-    margin-top: 30px;
-    font-size: 15px;
-    font-weight: 500;
+.text-2 {
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
+/* Media queries */
+
+@media (max-width: 768px) {
+  .contenedor-2 {
+    padding: 20px 5px;
+    margin: 100px 90px 5px 90px;
+  }
+}
+
+@media (max-width: 638px) {
+  .titulo-cont {
+    margin-top: 5px;
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0px;
+  }
+
+  .logo1,
+  .logo2 {
+    width: 145px;
+    height: 55px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  .text-2 {
+    margin-top: 25px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+
+  .logos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo1 {
+    width: 145px;
+    height: 50px;
+    box-shadow: 5px 5px 15px #07bb61e5;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .logo2 {
+    box-shadow: 5px 5px 15px #0791bbe5;
+    width: 145px;
+    height: 50px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .text-2 {
+    margin-top: 25px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .logo1:hover,
+  .logo2:hover {
+    transform: none;
+  }
+}
+
+/* Footer estilo ejemplo para que quede abajo */
 footer {
   margin-top: auto;
   background-color: rgb(29, 29, 29);
@@ -105,88 +194,10 @@ footer {
   color: white;
   border-radius: 1px;
   text-align: center;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
 footer p {
-  font-size: 15px;
+  font-size: 12px;
   margin: 5px 0 0 0;
-}
-
-@media (max-width: 768px){
-
-   .contenedor-2{
-     padding: 20px 5px;
-     margin: 100px 90px 5px 90px;
-
-   }
-
-}
-
-@media (max-width: 638px){
-    
-   .titulo-cont{
-     margin-top: 5px;
-     font-size: 30px;
-   }
-
-   .text{
-     font-size: 15px;
-     font-weight: 500;
-     margin-top: 0px;
-  }
-
-  .logo1 .logo2{
-   width: 145px;
-   height: 55px; 
-   margin-right: 10px;
-   border-radius: 10px;
-  }
-
-  .text-2{
-    margin-top: 25px;
-    font-size: 12px;
-    font-weight: 500;
- }
-}
-
-@media (max-width: 480px){
-
-    .text{
-      font-size: 12px;
-      margin-bottom: 25px;
-    }
-
-    .logos{
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .logo1{
-      width: 145px;
-      height: 50px;
-      box-shadow: 5px 5px 15px #07bb61e5;
-      margin-right: 0;
-      margin-bottom: 15px;
-    }
-
-    .logo2{
-      box-shadow: 5px 5px 15px #0791bbe5;
-      width: 145px;
-      height: 50px;
-      margin-right: 0;
-      margin-bottom: 15px;
-    }
-
-    .text-2{
-      margin-top: 25px;
-      font-size: 12px;
-      text-align: center;
-   }
-
-   .logo1:hover, .logo2:hover{
-     transform: none;
-   }
-   
-
 }

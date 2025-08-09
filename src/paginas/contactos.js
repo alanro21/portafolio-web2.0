@@ -3,6 +3,7 @@ import "./contactos.css"
 
 const contactos = () => {
   return (
+     <div className='app-contenedor'>
       <div className='contenedor-principal'>
         <div className='contenedor-2'> <h1 className='titulo-cont'>Contactos</h1>
           <p className='text'>Contáctame para más información en</p>
@@ -21,11 +22,12 @@ const contactos = () => {
           </div>
           <p className='text-2'>o sino por e-mail: alanrodriguezagostini71@gmail.com</p>
         </div>
-        <footer>
+      </div>
+      <footer>
           <p>Copyright © 2025</p>
           <p>Alan Rodriguez Agostini - Todos los derechos reservados.</p>
         </footer>
-      </div>
+    </div> 
   )
 }
 
