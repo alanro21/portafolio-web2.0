@@ -1,5 +1,7 @@
-body{
+html, body, #root{
+    height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 .contenedor-principal{
@@ -17,7 +19,7 @@ body{
     background-color: rgba(255, 255, 255, 0.911);
     box-shadow: 5px 5px 5px 5px #494949a4;
     padding: 20px 5px;
-    margin: 140px 250px 20px 250px;
+    margin: 140px 250px 140px 250px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -96,6 +98,20 @@ body{
     font-weight: 500;
 }
 
+footer {
+  margin-top: auto;
+  background-color: rgb(29, 29, 29);
+  box-shadow: 20px 1px 35px rgb(0, 0, 0);
+  color: white;
+  border-radius: 1px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+footer p {
+  font-size: 15px;
+  margin: 5px 0 0 0;
+}
 
 @media (max-width: 768px){
 
