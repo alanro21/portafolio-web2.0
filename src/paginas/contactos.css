@@ -115,8 +115,8 @@ html, body, #root {
 
 @media (max-width: 768px) {
   .contenedor-2 {
-    padding: 20px 5px;
-    margin: 100px 90px 5px 90px;
+    padding: 20px 20px;
+    margin: 100px 90px 100px 90px;
   }
 
   .footer-sobreMi{
@@ -134,34 +134,12 @@ html, body, #root {
 
 }
 
-@media (max-width: 638px) {
-  .titulo-cont {
-    margin-top: 5px;
-    font-size: 30px;
-  }
-
-  .text {
-    font-size: 15px;
-    font-weight: 500;
-    margin-top: 0px;
-  }
-
-  .logo1,
-  .logo2 {
-    width: 145px;
-    height: 55px;
-    margin-right: 10px;
-    border-radius: 10px;
-  }
-
-  .text-2 {
-    margin-top: 25px;
-    font-size: 12px;
-    font-weight: 500;
-  }
-}
-
 @media (max-width: 480px) {
+
+  .contenedor-2 {
+    padding: 20px 5px;
+    margin: 100px 90px 100px 90px;
+  }
   .text {
     font-size: 12px;
     margin-bottom: 25px;
@@ -198,6 +176,7 @@ html, body, #root {
   .logo2:hover {
     transform: none;
   }
+
 }
 
 /* Footer estilo ejemplo para que quede abajo */
