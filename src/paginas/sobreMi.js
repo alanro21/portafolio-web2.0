@@ -6,7 +6,9 @@ const sobreMi = () => {
   return (
     <>
      <div className='contenedor-inicial'>
-        <div className='container-imag-1'></div>
+        <div className='container-imag-1'>
+          <img src={`${process.env.PUBLIC_URL}/img/Foto-secundaria.png`} alt='Foto-principal' className='img-s'></img>
+        </div>
         <div className='container-info'>
           <div className='info'>
             <TypingEffect text='Me llamo Alan Hernan Rodriguez Agostini, tengo 24 años. 
