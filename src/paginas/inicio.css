@@ -58,7 +58,7 @@ body{
 
 footer{
     margin-bottom: -20px;
-    margin-top: 74px;
+    margin-top: 80px;
     background-color: rgb(29, 29, 29);
     box-shadow: 20px 1px 35px rgb(0, 0, 0);
     color: white;
@@ -82,7 +82,20 @@ footer p{
       .titulo h1{
         font-size: 26px;
         text-align: center;
-      }
+    }
+
+    .footer-sobreMi{
+     margin-bottom: 0px;
+     margin-top: 7px;
+     background-color: rgb(0, 0, 0);
+     color: white;
+     border-radius: 1px;
+    }
+
+    .footer-sobreMi p{
+      font-size: 12px;
+      margin-top: 5px;
+    }
 
 
 }
