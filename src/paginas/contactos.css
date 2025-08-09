@@ -118,6 +118,20 @@ html, body, #root {
     padding: 20px 5px;
     margin: 100px 90px 5px 90px;
   }
+
+  .footer-sobreMi{
+     margin-bottom: 0px;
+     margin-top: 7px;
+     background-color: rgb(0, 0, 0);
+     color: white;
+     border-radius: 1px;
+    }
+
+    .footer-sobreMi p{
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
 }
 
 @media (max-width: 638px) {
