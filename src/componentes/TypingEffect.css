@@ -1,0 +1,50 @@
+.titulo{
+    text-align: center;
+    background-color: #0ae2f1f5;
+    margin: 1px auto;
+    border-radius: 10px;
+    max-width: 90%;
+    width: fit-content;
+    padding: 10px;
+}
+
+h1.titulo{
+   font-size: 25px; 
+   color: #000000;
+}
+
+.descripcion{
+   font-size: 25px;
+}
+
+@media (max-width: 768px){
+
+      .titulo{
+        max-width: 100%;
+        padding: 8px 16px;
+      }
+
+      .titulo h1{
+        font-size: 26px;
+        text-align: center;
+      }
+
+
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        max-width: 95%;
+        padding: 8px 16px;
+    }
+
+    h1.titulo{
+        font-size: 15px;
+    }
+
+    .descripcion p{
+      color: white;
+      text-align: center;
+      font-size: 15px;
+    }
+}

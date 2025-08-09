@@ -3,16 +3,28 @@ body{
 }
 
 .contenedor-inicial{
+    opacity: 0;
+    animation: difuminarCont 0.3s forwards;
+}
+
+@keyframes difuminarCont {
+    to{
+        opacity: 1;
+    }
+}
+
+.contenedor-inicial{
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .container-imag-1{
-    width: 350px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
     background-color: #6aa8d8f5;
+    box-shadow: 9px 9px 25px #1078c7f5;
     margin-top: 190px;
-    margin-left: 120px;
+    margin-left: 250px;
     margin-right: 50px;
     border-radius: 10px;
     display: flex;
@@ -20,9 +32,9 @@ body{
 }
 
 .container-info{
-    height: 550px;
     width: 500px;
     background-color: #6aa8d8f5;
+    box-shadow: 9px 9px 25px #1078c7f5;
     margin: 100px 50px 0 50px;
     border-radius: 10px;
     display: flex;
@@ -37,16 +49,22 @@ body{
 .info{
      flex: 1;
      display: flex;
-     justify-content: center; /* centra verticalmente */
-     align-items: center;     /* centra horizontalmente */
-     text-align: center;
 }
 
 .info p{
     color: white;
+    font-size: 15px;
+}
+
+.boton{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
 }
 
 .boton-cv{
+     display: inline-flex;
      padding: 0px 15px;
      background-color: rgba(0, 0, 0, 0.829);
      color: white;
@@ -69,35 +87,130 @@ body{
     background-color: rgba(2, 177, 17, 0.705);
 }
 
-footer{
+.boton-git{
+    background-color: rgba(0, 0, 0, 0.829);;
+    padding: 2px 20px 2px 20px;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tex{
+    margin-top: 11px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.boton-git:hover{
+    transform: translateY(2px) scale(1.0);
+    background-color: rgba(2, 177, 17, 0.705);
+}
+
+.footer-sobreMi{
      margin-bottom: 0px;
-     margin-top: 74px;
-     background-color: rgba(95, 95, 95, 0.842);
+     margin-top: 80px;
+     background-color: rgb(29, 29, 29);
+     box-shadow: 20px 1px 35px rgb(0, 0, 0);
      color: white;
      border-radius: 1px;
 }
 
-footer p{
+.footer-sobreMi p{
     font-size: 12px;
     margin-top: 5px;
 }
 
 @media(max-width: 786px){
 
+    body{
+        margin: 0;
+    }
+
     .contenedor-inicial{
         flex-direction: column;
         align-items: center;
+        min-height: calc(100vh - 60px);
     }
 
     .container-imag-1{
-        margin: 50px 0 20px 0;
+        margin: 30px 0 20px 0;
     }
 
     .container-info{
-        margin: 0 20px 50px 20px;
-        width: 90%;
-        height: auto;
+        margin: 0 15px 10px 15px;
+        width: 94%;
     }
 
+    .footer-sobreMi{
+     margin-bottom: 0px;
+     margin-top: 7px;
+     background-color: rgb(0, 0, 0);
+     color: white;
+     border-radius: 1px;
+    }
+
+    .footer-sobreMi p{
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+
+}
+
+@media (max-width: 480px){
+
+    .info p{
+     color: white;
+     font-size: 14px;
+    }
+
+    .boton{
+     display: flex;
+     flex-direction: row;
+     gap: 40px;
+     align-items: center;
+}
+
+    .boton-cv{
+     display: inline-flex;
+     padding: 0px 14px;
+     background-color: rgba(0, 0, 0, 0.829);
+     color: white;
+     text-decoration: none;
+     border-radius: 5px;
+     font-weight: bold;
+     cursor: pointer;
+     text-align: center;
+     transition: transform 0.3s ease;
+    }
+
+    .boton-cv p{
+     font-size: 12px;
+     color: white;
+     text-align: center;
+    }
+
+   .boton-cv:hover{
+     transform: translateY(2px) scale(1.0);
+     background-color: rgba(2, 177, 17, 0.705);
+   }
+
+   .boton-git{
+     background-color: rgba(0, 0, 0, 0.829);;
+     padding: 0px 15px 0px 15px;
+     color: white;
+     border-radius: 5px;
+     transition: transform 0.3s ease;
+     cursor: pointer;
+     text-decoration: none;
+    }
+
+   .tex{
+     margin-top: 11px;
+     font-size: 12.5px;
+     font-weight: 700;
+    }
 
 }

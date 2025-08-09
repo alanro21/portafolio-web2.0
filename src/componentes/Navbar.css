@@ -4,6 +4,7 @@ body{
 
 .navbar{
     background-color: #6aa8d8f5;
+    box-shadow: 5px 5px 10px #238bdbe3;
     padding: 2px 30px;
 }
 
@@ -75,7 +76,9 @@ body{
         width: 100%;
         display: none;
         background-color: #6aa8d8f5;
-        margin-top: 10px;
+        padding: 10px;
+        transition: max-height 0.3s ease-out;
+        overflow: hidden;
     }
 
     .navbar-menu.active{
@@ -91,6 +94,10 @@ body{
         font-size: 20px;
         width: 100%;
         padding: 12px 0px;
+    }
+
+    .nav-link:hover{
+        transform: none;
     }
 
 }
